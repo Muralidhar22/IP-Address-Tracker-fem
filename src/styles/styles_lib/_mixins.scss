@@ -1,0 +1,11 @@
+@mixin for-mobile-view() {
+    @media screen and (max-width: 750px) {
+        @content;
+    }
+}
+
+@mixin for-desktop-view() {
+    @media screen and (min-width: 750px) {
+        @content;
+    }
+}

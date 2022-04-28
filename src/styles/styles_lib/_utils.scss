@@ -1,0 +1,25 @@
+@import "./mixins";
+
+.flex-class {
+    display: flex;
+}
+
+.grid-class {
+    display: grid;
+}
+
+a {
+    text-decoration: none;
+}
+
+.desktop-view {
+    @include for-mobile-view() {
+        display: none;
+    }
+}
+
+.mobile-view {
+    @include for-desktop-view() {
+        display: none;
+    }
+}

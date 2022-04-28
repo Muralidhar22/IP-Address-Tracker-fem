@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/icons8-location-24.png">
+
+  <title>IP Address Tracker</title>
+
+  <link rel="stylesheet" href="./src/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="root">
+    <div class="content-wrapper">
+      <div class="container flex-class">
+        <header>
+          <h1>IP Address Tracker</h1>
+        </header>
+
+        <div class="search-bar flex-class">
+          <input type="search" id="search" name="search" placeholder="Search for any IP address or domain">
+          <button class="search"><img src="./src/images/icon-arrow.svg" alt=""></button>
+        </div>
+
+        <div class="container-info flex-class">
+          <div class="ip section-1 section">
+            <div class="ip-title title">IP ADDRESS</div>
+            <div class="ip-value val"></div>
+          </div>
+
+          <span class="vertical-line desktop-view"></span>
+
+          <div class="loc section-2 section">
+            <div class="loc-title title">LOCATION</div>
+            <div class="loc-value val"></div>
+          </div>
+
+          <span class="vertical-line desktop-view"></span>
+
+          <div class="timezone section-3 section">
+            <div class="timezone-title title">TIMEZONE</div>
+            <div class="timezone-value val"></div>
+          </div>
+
+          <span class="vertical-line desktop-view"></span>
+
+          <div class="isp section-4 section">
+            <div class="isp-title title">ISP</div>
+            <div class="isp-value val"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="container-map">
+
+      </section>
+    </div>
+
+    <footer class="flex-class">
+      <div class="attribution">
+        Coded by <a href="#">Muralidhar</a>&nbsp;&#124;&nbsp;<a href="#">Repo link</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./src/scripts.js" type="module"></script>
+</body>
+
+</html>
