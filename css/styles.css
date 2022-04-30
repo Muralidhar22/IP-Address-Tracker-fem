@@ -1,0 +1,168 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding and reset fonts */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --very-dark-gray: hsl(0, 0%, 17%);
+  --dark-gray: hsl(0, 0%, 59%);
+  /* font family*/
+  --ff: "Rubik", sans-serif;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  color: #ffffff;
+}
+
+.flex-class {
+  display: flex;
+}
+
+.grid-class {
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+  .desktop-view {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .mobile-view {
+    display: none;
+  }
+}
+
+.container-wrapper {
+  min-height: 100vh;
+}
+
+.container {
+  background-image: url(../src/images/pattern-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container-info {
+  padding: 2rem;
+  color: var(--very-dark-gray);
+  background-color: #ffffff;
+  position: relative;
+  transform: translateY(50%);
+  z-index: 100;
+}
+@media screen and (max-width: 750px) {
+  .container-info {
+    gap: 1rem;
+    flex-direction: column;
+  }
+}
+
+.container-map {
+  width: 100%;
+  height: 70vh;
+}
+
+@media screen and (min-width: 750px) {
+  input[type=search] {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 750px) {
+  input[type=search] {
+    flex-grow: 2;
+  }
+  input[type=search]::placeholder {
+    opacity: 0;
+  }
+}
+input[type=search]::placeholder {
+  font-family: var(--ff);
+}
+input[type=search]:focus::placeholder {
+  opacity: 0;
+}
+
+button.search {
+  background-color: var(--very-dark-gray);
+  border: none;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 750px) {
+  .vertical-line {
+    display: inline-block;
+    border-left: 1px solid #ccc;
+    margin: 0 10px;
+    height: 3.5em;
+  }
+}
+
+footer {
+  color: black;
+  width: 100%;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 18px;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */

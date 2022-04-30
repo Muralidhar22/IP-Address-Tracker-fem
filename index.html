@@ -10,15 +10,23 @@
 
   <title>IP Address Tracker</title>
 
-  <link rel="stylesheet" href="./src/styles/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
 </head>
 
 <body>
   <div class="root">
-    <div class="content-wrapper">
+    <div class="container-wrapper">
       <div class="container flex-class">
         <header>
           <h1>IP Address Tracker</h1>
@@ -32,36 +40,32 @@
         <div class="container-info flex-class">
           <div class="ip section-1 section">
             <div class="ip-title title">IP ADDRESS</div>
-            <div class="ip-value val"></div>
           </div>
 
           <span class="vertical-line desktop-view"></span>
 
           <div class="loc section-2 section">
             <div class="loc-title title">LOCATION</div>
-            <div class="loc-value val"></div>
           </div>
 
           <span class="vertical-line desktop-view"></span>
 
           <div class="timezone section-3 section">
             <div class="timezone-title title">TIMEZONE</div>
-            <div class="timezone-value val"></div>
           </div>
 
           <span class="vertical-line desktop-view"></span>
 
           <div class="isp section-4 section">
             <div class="isp-title title">ISP</div>
-            <div class="isp-value val"></div>
           </div>
         </div>
       </div>
 
-      <section class="container-map">
-
-      </section>
+      <div id="map" class="container-map"></div>
     </div>
+
+
 
     <footer class="flex-class">
       <div class="attribution">
@@ -71,7 +75,8 @@
     </footer>
   </div>
 
-  <script src="./src/scripts.js" type="module"></script>
+  <script src="./src/scripts.js"></script>
+
 </body>
 
 </html>

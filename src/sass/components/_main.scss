@@ -1,41 +1,50 @@
-@import "./mixins";
+@use "./mixins"as *;
+@use "./root"as *;
 
-.root {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.content-wrapper {
+.container-wrapper {
     min-height: 100vh;
 }
 
 .container {
-    background-image: url(../../images/pattern-bg.png);
+    background-image: url(../src/images/pattern-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 
 .container-info {
+
     @include for-mobile-view() {
+        gap: 1rem;
         flex-direction: column;
     }
 
-    & .section {
-        width: #{"max(30c, 10vw)"};
-    }
+    padding: 2rem;
+    color: var(--very-dark-gray);
+    background-color: #ffffff;
+    position: relative;
+    transform: translateY(50%);
+    z-index: 100;
 }
 
 .container-map {
     width: 100%;
+    height: 70vh;
 }
 
 input[type="search"] {
-    width: 60%;
+    @include for-desktop-view() {
+        width: 500px;
+    }
+
 
     @include for-mobile-view() {
+        &::placeholder {
+            opacity: 0;
+        }
+
         flex-grow: 2;
     }
 

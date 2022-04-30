@@ -1,4 +1,4 @@
-@import "./mixins";
+@use "./mixins"as *;
 
 .flex-class {
     display: flex;
