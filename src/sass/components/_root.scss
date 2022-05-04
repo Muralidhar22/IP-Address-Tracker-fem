@@ -1,15 +1,50 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding and reset fonts */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
 :root {
     --very-dark-gray: hsl(0, 0%, 17%);
     --dark-gray: hsl(0, 0%, 59%);
 
     /* font family*/
     --ff: 'Rubik', sans-serif;
+
+    /*font size */
+    --fs-small: 0.65rem;
+    --fs-normal: 1rem;
+    --fs-large: 2rem;
+
+    /* font weight */
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    /* border -radius */
+    --br: 0.5rem;
+
+    /* padding */
+    --pd: 2rem;
 }
 
 html {
     font-family: 'Rubik', sans-serif;
 }
 
-body {
+h1 {
+    text-align: center;
     color: #ffffff;
+}
+
+li {
+    list-style: none;
 }

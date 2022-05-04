@@ -1,6 +1,6 @@
-export const address = document.querySelector(".address .ip--value")
-export const location = document.querySelector(".location .ip--value")
-export const timezone = document.querySelector(".timezone .ip--value")
-export const isp = document.querySelector(".isp .ip--value")
-export const searchBtn = document.querySelector(".search-bar .search")
+export const address = document.querySelector(".ip-info__data.address")
+export const location = document.querySelector(".ip-info__data.location")
+export const timezone = document.querySelector(".ip-info__data.timezone")
+export const isp = document.querySelector(".ip-info__data.isp")
+export const searchBtn = document.querySelector(".search-bar__btn")
 

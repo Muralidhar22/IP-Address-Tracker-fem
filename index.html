@@ -23,59 +23,55 @@
 </head>
 
 <body>
-  <div class="root">
-    <div class="container-wrapper">
-      <div class="container flex-class">
-        <header>
-          <h1>IP Address Tracker</h1>
-        </header>
+  <div class="container">
+    <header>
+      <h1 class="title">IP Address Tracker</h1>
 
-        <div class="search-bar flex-class">
-          <input type="search" id="search" name="search" placeholder="Search for any IP address or domain">
-          <button class="search"><img src="./src/images/icon-arrow.svg" alt=""></button>
-        </div>
-
-        <div class="container-info flex-class">
-          <div class="address section-1 section">
-            <p class="address-title title">IP ADDRESS</p>
-            <h2 class="ip--value">-</h2>
-          </div>
-
-          <span class="vertical-line desktop-view"></span>
-
-          <div class="location section-2 section">
-            <p class="loc-title title">LOCATION</p>
-            <h2 class="ip--value">-</h2>
-          </div>
-
-          <span class="vertical-line desktop-view"></span>
-
-          <div class="timezone section-3 section">
-            <p class="timezone-title title">TIMEZONE</p>
-            <h2 class="ip--value">-</h2>
-          </div>
-
-          <span class="vertical-line desktop-view"></span>
-
-          <div class="isp section-4 section">
-            <p class="isp-title title">ISP</p>
-            <h2 class="ip--value">-</h2>
-          </div>
-        </div>
+      <div class="search-bar flex">
+        <input type="search" id="search" name="search" placeholder="Search for any IP address or domain">
+        <button class="search-bar__btn"><span><img src="./src/images/icon-arrow.svg" alt=""></span></button>
       </div>
 
-      <div id="map" class="container-map"></div>
+
+    </header>
+
+
+    <div class="ip-info flex">
+      <ul>
+        <li class="ip-info__title">IP ADDRESS</li>
+        <li class="ip-info__data address">-</li>
+      </ul>
+      <ul>
+        <li class="ip-info__title">LOCATION</li>
+        <li class="ip-info__data location">-</li>
+      </ul>
+      <ul>
+        <li class="ip-info__title">TIMEZONE</li>
+        <li class="ip-info__data timezone">-</li>
+      </ul>
+      <ul>
+        <li class="ip-info__title">ISP</li>
+        <li class="ip-info__data isp">-</li>
+      </ul>
     </div>
-
-
-
-    <footer class="flex-class">
-      <div class="attribution">
-        Coded by <a href="#" target="_blank">Muralidhar</a>&nbsp;&#124;&nbsp;<a
-          href="https://github.com/Muralidhar22/IP-Address-Tracker-fem" target="_blank">Repo link</a>
-      </div>
-    </footer>
   </div>
+
+
+  <main>
+    <div id="map" class="main__map"></div>
+  </main>
+
+
+
+  <!-- Footer -->
+
+  <footer class="flex-class">
+    <div class="attribution">
+      Coded by <a href="#" target="_blank">Muralidhar</a>&nbsp;&#124;&nbsp;<a
+        href="https://github.com/Muralidhar22/IP-Address-Tracker-fem" target="_blank">Repo link</a>
+    </div>
+  </footer>
+  <!-- Scripts -->
   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
