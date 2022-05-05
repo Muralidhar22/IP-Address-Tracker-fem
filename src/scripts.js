@@ -2,7 +2,7 @@ import displayInfo from "./lib/display.js"
 import { searchBtn } from "./lib/elements.js";
 // custom marker for the map
 const customMarker = L.icon({
-    iconUrl: './images/icon-location.svg',
+    iconUrl: './src/images/icon-location.svg',
     iconSize: [35, 45],
 })
 // onload of the window fetch the Map according to the viewer IP
